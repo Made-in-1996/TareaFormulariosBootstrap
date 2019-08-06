@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        function iniciar(){
+            nombre1=document.getElementById("nombre");
+            nombre2=document.getElementById("apellido");
+            nombre1.addEventListener("input", validacion, false);
+            nombre2.addEventListener("input", validacion, false);
+            validacion();
+        }
+        function validacion() {
+            if(nombre1.value=='' && nombre2.value=='') {
+                nombre1.setCustomValidity('inserte al menos un nombre');
+                nombre1.style.background = '#FFDDDD';
+            }else{
+                nombre1.setCustomValidity('');
+                nombre1.style.background = '#FFFFFF'
+            }
+        }
+        window.addEventListener("load", iniciar, false);
+    </script>
+</head>
+<body>
+<section>
+    <div class="container">
+    <form
+            name="registracion" method="get" class="form-horizontal">
+        <div class="row">
+            <div class="col-xs-3">
+        <label class="control-label col-xs-1">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+        <label class="control-label col-xs-2">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido">
+          <br>
+        <input type="submit" id="send" value="ingresar" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+    </div>
+</section>
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

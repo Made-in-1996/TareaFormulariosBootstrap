@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<section>
+    <form
+            name="miformulario" id="miformulario" method="get" autocomplete="on">
+        <div class="row">
+            <div class="col-xs-3">
+                <label class="control-label col-xs-5">URL:</label>
+                <input type="url" name="miurl" id ="miurl" class="form-control">
+                <label class="control-label col-xs-5">Telefono:</label>
+                <input type="tel" name="telefono" id ="telefono" class="form-control">
+                <label class="control-label col-xs-5">Numeros:</label>
+                <input type="number" name="numero" id ="numero" min="0" max=10" step="5" class="form-control">
+                <label class="control-label col-xs-5">Fecha:</label>
+                <input type="date" name="fecha" id ="fecha" class="form-control">
+                <label class="control-label col-xs-5">Semana:</label>
+                <input type="week" name="semana" id ="semana" class="form-control">
+                <label class="control-label col-xs-5">Mes:</label>
+                <input type="month" name="mes" id ="mes"class="form-control">
+                <label class="control-label col-xs-5">Hora:</label>
+                <input type="time" name="hora" id ="hora" class="form-control">
+                <label class="control-label col-xs-5">Fecha/Hora:</label>
+                <input type="datetime" name="fechahora" id ="fechahora" class="form-control">
+                <label class="control-label col-xs-5">Tiempo/Local:</label>
+                <input type="datetime-local" name="tiempolocal" id ="tiempolocal" class="form-control">
+                <label class="control-label col-xs-5">Color:</label>
+                <input type="color" name="micolor" id ="micolor" class="form-control">
+                <label class="control-label col-xs-5">Busqueda:</label>
+                <input input type="search" name="busqueda" id="busqueda" placeholder="Escriba su busqueda" class="form-control">
+                <label class="control-label col-xs-5">Email:</label>
+                <input type="email" name="email" id="email" class="form-control">
+                <br>
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<section>
+    <form
+            name="miformulario" id="miformulario" method="get">
+        <div class="row">
+            <div class="col-xs-5">
+        <label class="control-label col-xs-5">Codigo Postal:</label>
+        <input pattern="[0-9]{5}" name="codigopostal" class="form-control" id="codigopostal">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5">
+        <label class="control-label col-xs-5">Inserte 5 Numeros:</label>
+        <input title="inserte los 5 numeros de su codigo postal" class="form-control">
+                <br>
+        <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</section>
+</div>
+</body>
+</html>
